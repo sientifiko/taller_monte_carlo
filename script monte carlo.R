@@ -33,6 +33,9 @@ replicate(1000, {
   group_by(eleccion) %>%
   summarize(exito = sum(resultado)/n()) -> monty_data
 
+# Probalidad teórica 2/3, no cambiar 1/3
+monty_data
+
 rm(puertas, monty_data)
 
 
